@@ -3,7 +3,7 @@ rvm:
  - 2.2
 
 install:
-  - curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | bash
+  - "curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | bash"
 
 script:
 - FOSSA_API_TOKEN=3c97524e0e919530bbc6431f2ef2b70f fossa
