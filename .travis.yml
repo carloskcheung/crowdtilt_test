@@ -2,7 +2,11 @@ language: ruby
 rvm:
  - 2.2
 sudo: required
+
 install:
+  - bundle install
+
+before_script:
   - "curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | bash"
 
 script:
